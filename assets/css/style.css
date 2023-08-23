@@ -48,6 +48,21 @@ img {
 .p-80 {
   padding: 80px 0;
 }
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.mt-80 {
+  margin-top: 80px;
+}
+.bg_light_bl {
+  background-color: #E4F1F6;
+}
 
 
 /*/////// Buttons //////*/
@@ -96,6 +111,9 @@ img {
 .nav-menu ::-webkit-scrollbar-track {
   background-color: transparent;
 }
+.submenu .active {
+  color: #0E2258;
+}
 a {
   text-decoration: none;
 }
@@ -104,7 +122,7 @@ nav {
   width: 100%;
   z-index: 999;
   display: flex;
-  position: fixed;
+/*  position: fixed;*/
   align-items: center;
   padding: 20px 60px 0;
   background-color: #fff;
@@ -112,6 +130,8 @@ nav {
   justify-content: space-between;
 }
 .affix {
+  top: 0;
+  position: fixed;
   padding: 0px 60px 0;
   transition: all 0.3s ease;
   box-shadow: 0 0 8px 0 rgba(0,0,0,0.1), 0 0 36px 0 rgba(0,0,0,0.1);
@@ -349,7 +369,7 @@ nav > .navmenu_right > div {
 /*/////////// Banner ////////////*/
 .que_banner_text .item {
   height: 88vh;
-  margin-top: 80px;
+/*  margin-top: 80px;*/
   position: relative;
 }
 .que_banner_text .item .cover {
@@ -710,6 +730,7 @@ nav > .navmenu_right > div {
   margin-top: 20px;
 }
 .faq_questions .accordion-body {
+  color: #716C80;
   padding: 20px 0;
 }
 .faq_questions .accordion-button:focus, 
@@ -727,6 +748,12 @@ nav > .navmenu_right > div {
   position: relative;
   border-radius: 55px;
   background-color: #E4F1F6;
+}
+.disover .row {
+  height: 370px;
+}
+.information .que_header h2 {
+  line-height: 45px;
 }
 .disover .btn, .subscribe_form,
 .footer_logo p {
@@ -945,10 +972,96 @@ background-color:black;
 }
 
 
+/*//////////////////////////////////////////////
+                    Sub Pages
+/////////////////////////////////////////////*/
 
+/*////////// Finance ////////////*/
+.sub_banner .que_header h2 {
+  font-size: 40px;
+}
+.banking {
+  padding-right: 140px;
+}
+.img_all img {
+  width: 500px;
+  display: block;
+  margin: 0 auto;
+}
+.banking .que_header {
+  margin-bottom: 30px;
+}
+.banking p {
+  line-height: 28px;
+  margin-bottom: 0;
+}
+.info_img img {
+  width: 460px;
+  display: block;
+  margin: 0 auto;
+}
+.info_detais {
+  padding: 0 120px;
+}
+.info_detais h4 {
+  font-weight: 700;
+  line-height: 40px;
+  font-family: 'Quicksand', sans-serif;
+}
+.relationship {
+  margin-top: 30px;
+  padding: 70px 50px;
+  border-radius: 30px;
+  border: 1px solid #f3f3f3;
+  box-shadow: 0 0 1.5625rem 0 rgb(54 186 254 / 10%);
+}
+.relationship p {
+  margin-bottom: 0;
+}
+.relation_icons {
+  position: relative;
+}
+.relation_icons img {
+  width: 65px;
+  padding: 20px 0;
+}
+/*.relation_icons:after {
+  left: 0;
+  top: 0;
+  content: "";
+  width: 50px;
+  height: 50px;
+  z-index: -1;
+  opacity: 0.07;
+  position: absolute;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background: url(../images/icon_bg.png);
+}*/
+.appointments_det {
+  padding: 0 60px;
+}
+.features_single {
+  padding: 30px;
+  margin-top: 30px;
+  min-height: 310px;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 1.5625rem 0 rgb(54 186 254 / 10%);
+}
+.features_single img {
+  width: 65px;
+  padding-bottom: 30px;
+}
+.features_single .header_sm h3 {
+  margin-bottom: 20px;
+}
+.que_features .que_header p {
+  padding-right: 50px;
+}
 
-
-
+/*///////// Retail /////////*/
 
 
 
@@ -1015,6 +1128,18 @@ background-color:black;
   .que_partner, .subscribe {
     padding: 60px 20px;
   }
+  .img_all img, .info_img img {
+    width: 100%;
+  }
+  .banking {
+    padding-right: 60px;
+  }
+  .info_detais {
+    padding: 0 60px;
+  }
+  .relationship {
+    padding: 40px 15px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1080,6 +1205,12 @@ background-color:black;
   .intersect-left, .intersect-right {
     z-index: -1;
   }
+  .banking, .info_detais, .appointments_det {
+    padding: 0;
+  }
+  .appointments_det {
+    margin-bottom: 50px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1123,6 +1254,12 @@ background-color:black;
     box-shadow: none;
     border: 1px solid #e1e1e1;
   }
+  .banking, .info_detais {
+    margin-bottom: 50px;
+  }
+  .features .mt-40 {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1138,6 +1275,9 @@ background-color:black;
   .header-content h1 br, .product_active_number,
   .que_header h2 br, .que_desk_visib {
     display: none;
+  }
+  .que_header h2 {
+    font-size: 28px;
   }
   .que_mob_visib {
     display: block;
