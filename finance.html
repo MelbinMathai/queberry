@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html class="main_" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" type="image/png" href="assets/images/favicon.svg">
+    <title>Queue Management System Dubai | Customer Flow Management </title>
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.css">
+    
+    <!-- Custom CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Progress Bar & Bottom to Top -->
+    <div class="progress-wrap">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+        </svg>
+    </div>
+
+    <!-- Nav Menu -->
+    <header>
+        <nav>
+            <!-- Logo -->
+            <div class="logo">
+                <a href="" class="que_logo">
+                    <img src="assets/images/queberry-color.svg">
+                </a>
+            </div>
+
+            <div class="navmenu_right">
+                <div class="quick_access">
+                    <a href="" class="btn btn_primary desk_visib">Request a demo</a>
+                    <a href="" class="btn btn_secondary desk_visib">Contact Us</a>
+                    <div class="btn-group language_select">
+                        <a href="" class="dropdown-toggle lang_current" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="assets/images/language_icon/language_USA.svg">
+                            <span>EN</span>
+                            <span><i class="fa-solid fa-angle-down"></i></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <ul class="language_set list-unstyled mb-0">
+                                <li>
+                                    <a href="" class="dropdown-item d-flex" >
+                                        <img src="assets/images/language_icon/language_USA1.svg">
+                                        <span>English</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="dropdown-item d-flex" >
+                                        <img src="assets/images/language_icon/language_spain.svg">
+                                        <span>Espanol</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="dropdown-item d-flex" >
+                                        <img src="assets/images/language_icon/language_france.svg">
+                                        <span>Francais</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="dropdown-item d-flex" >
+                                        <img src="assets/images/language_icon/language_italy.svg">
+                                        <span>Italiano</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="dropdown-item d-flex" >
+                                        <img src="assets/images/language_icon/language_netherlands.svg">
+                                        <span>Nederlands</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <input type="checkbox" id="menu-right">
+                <label for="menu-right" class="menu-bt right"></label>
+                <div class="nav-menu right">
+                    <div class="menu-scroll sidebar">
+                        <!-- Sidemenu Logo -->
+                        <div class="sidemenu_logo">
+                            <img src="assets/images/queberry-color.svg">
+                        </div>
+                        <!-- Side Menu List -->
+                        <ul class="nav flex-column" id="nav_accordion">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item has-submenu">
+                                <a class="nav-link" href="#">Solutions
+                                    <i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="submenu collapse">
+                                    <!-- Industries Submenu -->
+                                    <li class="nav-item has-submenu">
+                                        <a class="nav-link" href="#">Industries 
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </a>
+                                        <ul class="submenu sm_menu collapse">
+                                            <li><a class="nav-link active" href="#">Finance</a></li>
+                                            <li><a class="nav-link" href="retail.html">Retail</a></li>
+                                            <li><a class="nav-link" href="#">Healthcare</a></li>
+                                            <li><a class="nav-link" href="#">Government</a></li>
+                                        </ul>
+                                    </li>
+                                    <!-- Solutions Submenu -->
+                                    <li class="nav-item has-submenu">
+                                        <a class="nav-link" href="#">Solutions 
+                                            <i class="fa-solid fa-angle-down"></i>
+                                        </a>
+                                        <ul class="submenu sm_menu collapse">
+                                            <li><a class="nav-link" href="#">Queue Management</a></li>
+                                            <li><a class="nav-link" href="#">Digital Signage</a></li>
+                                            <li><a class="nav-link" href="#">Mobile Solution and Appointment</a></li>
+                                            <li><a class="nav-link" href="#">Customer Feedback Solution</a></li>
+                                            <li><a class="nav-link" href="#">Business Analytics</a></li>
+                                            <li><a class="nav-link" href="#">Touchless Queuing</a></li>
+                                            <li><a class="nav-link" href="#">Counter Display</a></li>
+                                            <li><a class="nav-link" href="#">Software Support</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item has-submenu">
+                                <a class="nav-link" href="#">Products
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                                <ul class="submenu collapse">
+                                    <li><a class="nav-link" href="#">Queberry Essentials</a></li>
+                                    <li><a class="nav-link" href="#">Queberry Enterprise</a></li>
+                                    <li><a class="nav-link" href="#">Queberry Cloud Solution</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Integrations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Case Studies</a>
+                            </li>
+                            <li class="nav-item has-submenu">
+                                <a class="nav-link" href="#">Explore
+                                <i class="fa-solid fa-angle-down"></i>
+                            </a>
+                                <ul class="submenu collapse">
+                                    <li><a class="nav-link" href="#">About Us</a></li>
+                                    <li><a class="nav-link" href="#">Careers</a></li>
+                                    <li><a class="nav-link" href="#">Blogs</a></li>
+                                    <li><a class="nav-link" href="#">News</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- Become a Partner Button -->
+                        <div class="become_partner">
+                            <a href="" class="btn btn_primary">Become a Partner</a>
+                        </div>
+                        <div class="reqst_buttons d-sm-flex d-lg-none">
+                            <a href="" class="btn btn_primary">Request a demo</a>
+                            <a href="" class="btn btn_secondary">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Finance Banner -->
+    <section class="sub_banner bg-light p-80 mt-10">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-6">
+                    <div class="que_sm_banner que_header text-center">
+                        <h2>Finance</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui consectetur at, sunt maxime, quod alias ullam officiis, ex necessitatibus similique odio aut!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Banking & Insurance -->
+    <section class="que_banking p-80">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="banking">
+                        <div class="que_header">
+                            <h2>Banking & Insurance</h2>
+                        </div>
+                        <p>Queberry is designed to serve the complex financial customer experience in a pleasant and friendly way by minimizing actual and perceived waiting time using mobile-first technology. Online Appointment Scheduling Software For Banks is an easy & innovative solution to handle different stages of a customer journey, from pre-arrival to the end of the journey, using the latest smart technologies.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="banking_img img_all">
+                        <img src="assets/images/finance.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Info -->
+    <section class="que_info bg_light_bl p-80">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 order-md-last">
+                    <div class="info_detais">
+                        <h4>Queberry Internet and location-based mobile applications inform the customer to find the nearest branch and take a virtual ticket booking and appointment scheduling before arriving on site.</h4>
+                    </div>
+                </div>
+
+                <div class="col-md-6 order-md-first">
+                    <div class="info_img">
+                        <img src="assets/images/bank_appointment.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Relationship -->
+    <section class="que_relationship p-80">
+        <div class="container">
+            <div class="que_header text-center">
+                <h2>Engage your customers by building <br>Personalised Relationships.</h2>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="relationship text-center">
+                        <div class="header_sm">
+                            <h3>Customer profiles</h3>
+                        </div>
+                        <div class="relation_icons">
+                            <img src="assets/images/profile.png">
+                        </div>
+                        <p>By creating detailed customer profiles in the appointment management system for banking, you can personalise each customer’s experience to make them feel valued and special.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="relationship text-center">
+                        <div class="header_sm">
+                            <h3>Accessibility</h3>
+                        </div>
+                        <div class="relation_icons">
+                            <img src="assets/images/accessibility.png">
+                        </div>
+                        <p>Since appointment scheduling software for banks is accessible to everyone, customers feel connected and prioritised. This helps the bank to build a personalised relationship with the customer.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="relationship text-center">
+                        <div class="header_sm">
+                            <h3>Tailored services</h3>
+                        </div>
+                        <div class="relation_icons">
+                            <img src="assets/images/service.png">
+                        </div>
+                        <p>Banks can use the scheduling software to gain insights into customer behaviour and preferences, allowing them to provide tailored services and build a personalised relationship with the customer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Easy Appointments -->
+    <section class="que_appointments p-80">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-last">
+                    <div class="appointments_det">
+                        <div class="que_header">
+                            <h2>Easy Appointments <br> Solution for your clients </h2>
+                        </div>
+                        <div class="appointments_all">
+                            <p>Bank appointment scheduling is now easier than ever. With this, clients can schedule and reschedule appointments, and receive appointment reminders.</p>
+                            <p>An appointment management system for banking helps banks save time and money and improve customer service. It reduces the need for manual scheduling, streamlines appointment scheduling processes, and eliminates costly no-shows. </p>
+                            <p>Our software also allows banking staff to quickly access customer information and history, making it easier to provide the best customer service possible. With the right appointment scheduling software, banks can ensure clients get the service hassle-free.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 order-lg-first">
+                    <div class="appointments_img img_all">
+                        <img src="assets/images/easy_appointments.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Features -->
+    <section class="que_features bg_light_bl p-80">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <div class="que_header">
+                        <h2>Some major <br> Features includes </h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="features">
+                        <div class="row">
+                            <div class="col-md-6 mt-40">
+                                <div class="features_single">
+                                    <img src="assets/images/check-in.png">
+                                    <div class="header_sm">
+                                        <h3>Quick check-ins</h3>
+                                    </div>
+                                    <p>On arrival, the customer can quickly do a check-in via self-service ticket dispenser kiosks, Greeter tablet or own mobile devices or at reception</p>
+                                </div>
+
+                                <div class="features_single">
+                                    <img src="assets/images/customer-engagement.png">
+                                    <div class="header_sm">
+                                        <h3>Engaging Customers</h3>
+                                    </div>
+                                    <p>While waiting, customers is engaged with Queberry digital signage and well informed about their upcoming ticket or appointment via mobile virtual queuing alerts</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="features_single">
+                                    <img src="assets/images/feedback.png">
+                                    <div class="header_sm">
+                                        <h3>Easy Feedbacks</h3>
+                                    </div>
+                                    <p>At serving stage or end of service, the customer can provide immediate feedback about their experience at different touch points either by mobile, on kiosk or by SMS</p>
+                                </div>
+
+                                <div class="features_single">
+                                    <img src="assets/images/smart.png">
+                                    <div class="header_sm">
+                                        <h3>Easy & Smart</h3>
+                                    </div>
+                                    <p>It’s an easy & smart solution to handle different stages of a customer journey from a pre-arrival to end of journey using latest smart technologies</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faqs -->
+    <section class="faqs p-80">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="faqs_img text-center">
+                        <img src="assets/images/faq.png">
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="faq_questions">
+                        <div class="que_header">
+                            <h2>Frequently Asked Questions</h2>
+                        </div>
+
+                        <div class="accordion" id="accordionExample">
+                          <div class="accordion-item">
+                            <div class="accordion-header">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <h4>What is Queue Management System?</h4>
+                              </button>
+                            </div>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui consectetur at, sunt maxime, quod alias ullam officiis, ex necessitatibus similique odio aut! Provident, adipisci esse vero magni necessitatibus quisquam commodi.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <div class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <h4>What is Queue Management System?</h4>
+                              </button>
+                            </div>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui consectetur at, sunt maxime, quod alias ullam officiis, ex necessitatibus similique odio aut! Provident, adipisci esse vero magni necessitatibus quisquam commodi.
+                              </div>
+                            </div>
+                          </div>
+                          <div class="accordion-item">
+                            <div class="accordion-header">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <h4>What is Queue Management System?</h4>
+                              </button>
+                            </div>
+                            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                              <div class="accordion-body">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui consectetur at, sunt maxime, quod alias ullam officiis, ex necessitatibus similique odio aut! Provident, adipisci esse vero magni necessitatibus quisquam commodi.
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <section class="footer p-80">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer_logo">
+                        <img src="assets/images/queberry-white.svg">
+                        <p>Being the most promising multinational technology company, We dream big and explore the digital world with our queue management and customer flow management solutions</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="quick_links">
+                        <h3>Our Solutions</h3>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="">Queue Management</a>
+                            </li>
+                            <li>
+                                <a href="">Digital Signage</a>
+                            </li>
+                            <li>
+                                <a href="">Mobile Solution and Appointment</a>
+                            </li>
+                            <li>
+                                <a href="">Customer Feedback Solution</a>
+                            </li>
+                            <li>
+                                <a href="">Business Analytics</a>
+                            </li>
+                            <li>
+                                <a href="">Touchless Queuing</a>
+                            </li>
+                            <li>
+                                <a href="">Counter Display</a>
+                            </li>
+                            <li>
+                                <a href="">Software Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="quick_links">
+                        <h3>Our Products</h3>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="">Queberry Essentials</a>
+                            </li>
+                            <li>
+                                <a href="">Queberry Enterprise</a>
+                            </li>
+                            <li>
+                                <a href="">Queberry Cloud Solution</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <div class="quick_links">
+                        <h3>Contact Us</h3>
+                        <div class="address">
+                            <h4>SA</h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="location pt-0 d-flex">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                        12th Floor – 12,Southwick St., Devonport,W2 2QH, London,UK
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="tel:+4407584781053" class="mobile d-flex">
+                                        <i class="bi bi-phone-fill"></i>
+                                        +44 0758 4781053
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:+sales@queberry.com" class="mail d-flex">
+                                        <i class="bi bi-envelope-fill"></i>
+                                        sales@queberry.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="address">
+                            <h4>FR</h4>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="location pt-0 d-flex">
+                                        <i class="bi bi-geo-alt-fill"></i>
+                                        12th Floor – 12,Southwick St., Devonport,W2 2QH, London,UK
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="tel:+4407584781053" class="mobile d-flex">
+                                        <i class="bi bi-phone-fill"></i>
+                                        +44 0758 4781053
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:+sales@queberry.com" class="mail d-flex">
+                                        <i class="bi bi-envelope-fill"></i>
+                                        sales@queberry.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer_bottom">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="social_media">
+                        <ul class="list-unstyled mb-0">
+                            <li>
+                                <a href="" class="social"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="" class="social"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href="" class="social"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="" class="social"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="copyrights text-end">
+                        <span>Queberry © 2023 / All Rights Reserved</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>  
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
