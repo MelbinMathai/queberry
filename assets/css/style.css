@@ -48,6 +48,9 @@ img {
 .p-80 {
   padding: 80px 0;
 }
+.pt-80 {
+  padding-top: 80px;
+}
 .mt-10 {
   margin-top: 10px;
 }
@@ -57,13 +60,18 @@ img {
 .mt-40 {
   margin-top: 40px;
 }
+.mt-50 {
+  margin-top: 50px;
+}
 .mt-80 {
   margin-top: 80px;
 }
 .bg_light_bl {
   background-color: #E4F1F6;
 }
-
+ul {
+  list-style: none;
+}
 
 /*/////// Buttons //////*/
 .btn_primary {
@@ -116,6 +124,9 @@ img {
 }
 a {
   text-decoration: none;
+}
+a:hover {
+  color: #3b53a0;
 }
 nav {
   height: 80px;
@@ -476,6 +487,9 @@ nav > .navmenu_right > div {
   font-size: 34px;
   margin-bottom: 20px;
 }
+/*.que_discover .que_header h2 {
+  font-family: 'Quicksand', sans-serif;
+}*/
 .que_management_metrics .que_header p {
   width: 800px;
   margin: 0 auto;
@@ -489,6 +503,10 @@ nav > .navmenu_right > div {
 }
 #counter span.percent:after {
   content: "%";
+  display: inline-block;
+}
+#counter h3.percent:after {
+  content: "+";
   display: inline-block;
 }
 .count {
@@ -618,6 +636,9 @@ nav > .navmenu_right > div {
 .que_industries .que_header h2 {
   margin-bottom: 0;
 }
+.product_img.wdth_adj img {
+  width: 480px;
+}
 
 /*////////// Mobile Solutions ////////*/
 .mobile_solutions {
@@ -678,21 +699,40 @@ nav > .navmenu_right > div {
   height: 300px;
   overflow: hidden;
 }
-.owl-carousel .owl-item .blog_img img {
+.owl-carousel .owl-item .blog_img img, .blog_img img {
   min-height: 300px;
   object-fit: cover;
   border-radius: 10px;
 }
+.blog_single {
+  border-radius: 10px;
+  border: 1px solid #e7e7e7;
+  transition: all 0.3s ease;
+}
+.blog_single:hover {
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 55px 5px rgba(137,173,255,.35);
+}
+.all_blogs .blog_single {
+  margin-top: 30px;
+}
+.blog_details {
+  padding: 0 20px 30px;
+}
 .blog_details h3 {
   margin-top: 30px;
-  margin-bottom: 20px;
+  min-height: 48px;
 }
-.blog_details p {
+.blog_details p, .blog_details h3,
+.news_content p {
   overflow: hidden;
   margin-bottom: 40px;
   display: -webkit-box;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+}
+.blog_details h3 {
+  margin-bottom: 20px;
 }
 .blog_details .read_more {
   justify-content: start;
@@ -726,7 +766,8 @@ nav > .navmenu_right > div {
   margin-bottom: 0;
   font-family: 'Quicksand', sans-serif;
 }
-.faq_questions .accordion-header {
+.faq_questions .accordion-header,
+.sub_news_detail h5 {
   margin-top: 20px;
 }
 .faq_questions .accordion-body {
@@ -774,7 +815,7 @@ nav > .navmenu_right > div {
   width: 125px;
   height: 130px;
 }
-.become_partner {
+.become_partner, .self_service {
   padding: 0 0;
   background: #EEF5FF;
 }
@@ -1061,7 +1102,395 @@ background-color:black;
   padding-right: 50px;
 }
 
-/*///////// Retail /////////*/
+/*///////// Healthcare /////////*/
+.info_detais.health_info {
+  padding: 0 40px;
+} 
+.hospital_management .col-md-4 {
+  display: flex;
+}
+
+/*///////// Queue Management /////////*/
+.que_mng_sftr .col-lg-4, .que_mng_sftr .col-md-6, 
+.self_service .col-lg-6, .que_mng_sftr .col-lg-8,
+.integration_content .col-lg-4, .integration_content .col-md-6 {
+  display: flex;
+}
+.que_mng_sftr .header_sm {
+    min-height: 50px;
+}
+.que_benefits_all {
+  padding-left: 0;
+}
+.que_benefits_all li {
+  display: flex;
+  padding: 10px 0;
+  align-items: center;
+}
+.que_benefits_all span {
+  color: #000;
+  font-weight: 600;
+  padding-left: 15px;
+}
+.que_benefits_all i {
+  color: #3B53A0;
+}
+.self_service_kiosk {
+  padding: 80px 80px 0 80px;
+}
+.counter_display {
+  padding: 0 80px 80px 80px;
+}
+.kiosk_img {
+  width: 400px;
+  margin: 0 auto;
+  display: block;
+  margin-top: 50px;
+}
+.counter_img {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+.self_service_kiosk .btn_primary, 
+.counter_display .btn_primary {
+  margin-top: 30px;
+}
+.counter_display {
+  background: #E4F1F6;
+}
+
+/*///////// Mobile Solution & Appointment /////////*/
+.info_detais.scheduling_app {
+  padding: 0 30px;
+}
+
+.customer_feed .relationship {
+  padding: 70px 40px;
+}
+.que_mng_sftr.customer_feed .header_sm {
+  min-height: 0;
+}
+
+.que_support_single {
+  padding: 60px;
+  display: flex;
+  border-radius: 55px;
+  align-items: center;
+  background-color: #EEF5FF;
+}
+.queueberry_support .col-lg-6 {
+  display: flex;
+}
+.discover_necessary.disover {
+  display: flex;
+  padding: 90px 210px;
+  align-items: center;
+}
+.discover_necessary .que_header h2 {
+  line-height: 40px;
+}
+.que_mng_sftr .benefits_explain {
+  display: flex;
+  background: #EEF5FF;
+  padding: 70px 100px;
+  align-items: center;
+}
+.benefits_explain h4 {
+  font-weight: 700;
+  line-height: 40px;
+  font-family: 'Quicksand', sans-serif;
+}
+.queberry_essential_features .features_single {
+  min-height: auto;
+}
+.que_support_single.info_detais p {
+  font-size: 17px;
+  margin-bottom: 0;
+  line-height: 28px;
+}
+.about_single {
+  padding: 50px 30px;
+  margin-top: 30px;
+  text-align: center;
+  border-radius: 30px;
+  background-color: #EEF5FF;
+/*  box-shadow: 0 0 1.5625rem 0 rgb(54 186 254 / 10%);*/
+}
+.about_single h3, .about_single h5, .team_details h5,
+.job_opening h5, .filter_head h5, .integation_detail h5 {
+  font-family: 'Quicksand', sans-serif;
+}
+.about_single h3 {
+  color: #0E2258;
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.about_single h5 {
+  color: #716C80;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+/*.about_single.clr_yellow {
+  background-color: #fff7ed;
+}
+.about_single.clr_yellow h3, .about_single.clr_yellow h5 {
+  color: #ffbe16;
+}
+.about_single.clr_green {
+  background-color: #eafff2;
+}
+.about_single.clr_green h3, .about_single.clr_green h5 {
+  color: #9cd161;
+}
+.about_single.clr_blue {
+  background-color: #ebfaff;
+}
+.about_single.clr_blue h3, .about_single.clr_blue h5 {
+  color: #6ebece;
+}*/
+.que_team_member {
+  overflow: hidden;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+.team_details {
+  padding: 15px;
+  background-color: #E4F1F6;
+}
+.team_details h5 {
+  font-weight: 700;
+}
+.team_details p {
+  margin-bottom: 0;
+}
+.openings {
+  display: flex;
+  margin-top: 30px;
+  background: #fff;
+  padding: 20px 25px;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #e7e7e7;
+  transition: all 0.3s ease;
+}
+.openings:hover {
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 55px 5px rgba(137,173,255,.35);
+}
+.job_opening p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.job_opening h5 {
+  font-size: 19px;
+  font-weight: 700;
+}
+.job_opening {
+  width: 40%;
+}
+.job_type, .years_experience,
+.job_direction {
+  width: 20%;
+  text-align: center;
+}
+.job_type span {
+  color: #fff;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  background-color: #3b53a0;
+  text-transform: uppercase;
+}
+.job_type.freelancer span {
+  background-color: #ff8207;
+}
+.job_circle {
+  width: 40px;
+  height: 40px;
+  float: right;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  background-color: #EEF5FF;
+}
+.about_single .que_counter {
+  margin-top: 0;
+}
+.more_jobs {
+  margin-top: 50px;
+}
+.more_jobs .btn_primary {
+  min-width: 300px;
+}
+.blog_full_img img, .news_img img {
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+.blog_post_details {
+  display: flex;
+  align-items: center;
+}
+.blog_post img {
+  width: 35px;
+  margin-right: 15px;
+}
+.blog_date, .blog_post {
+  font-size: 14px;
+}
+.blog_date, .read_time {
+  margin-left: auto;
+}
+.blog_data_single {
+  margin-top: 30px;
+}
+
+.blog_data_single h4 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.blog_small {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #E4F1F6;
+}
+.blog_small_single {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+.blog_small_single:last-child, .news_single:last-child {
+  border: none;
+}
+.blog_small_single a {
+  color: #716C80;
+  font-size: 13px;
+}
+.blog_small_single a:hover {
+  color: #0E2258;
+}
+.news_img {
+  position: relative;
+}
+.featured_news {
+  top: 15px;
+  left: 15px;
+  color: #fff;
+  font-size: 14px;
+  padding: 5px 10px;
+  position: absolute;
+  border-radius: 5px;
+  background-color: #2576A2;
+}
+.news_single {
+  display: flex;
+  padding: 25px 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+.news_single img {
+  width: 170px;
+  height: 113px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.sub_news_detail {
+  width: 100%;
+  padding-left: 30px;
+}
+.que_filter {
+  top: 80px;
+  position: sticky;
+  background-color: #fff;
+}
+.filter_single {
+  min-height: 50px;
+  padding: 25px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 10px 15px #ccc;
+}
+.que_filtering {
+  cursor: pointer;
+  padding-left: 30px;
+  position: relative;
+}
+.filter_single .col-md-4 {
+  position: relative;
+}
+.filter_single .col-md-4:before {
+  content: '';
+  top: 0;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  background-color: #e7e7e7;
+}
+.filter_single .col-md-4:first-child::before {
+  display: none;
+}
+.filter_head h5 {
+  font-size: 16px;
+  margin-bottom: 0;
+  margin-left: 15px;
+}
+.filter_head i {
+  color: #3b53a0;
+}
+.filter_content {
+  display: none;
+}
+.filter_inputs {
+  position: relative;
+}
+.filter_inputs .form-control {
+  font-size: 14px;
+  padding: .6rem .75rem;
+}
+.filter_inputs i {
+  top: 14px;
+  right: 20px;
+  position: absolute;
+}
+.filter_all ul {
+  padding-left: 0;
+}
+.filter_all ul li {
+  padding: 5px 0;
+}
+.filter_all ul li a {
+  color: #0E2258;
+  font-size: 14px;
+}
+.filter_all ul li a:hover {
+  color: #000;
+}
+.reset_selection {
+  color: #0083cc;
+  font-size: 15px;
+  margin-left: 15px;
+}
+.integration_img img {
+  width: 180px;
+  display: block;
+  margin: 0 auto;
+}
+.integation_single {
+  margin-top: 30px;
+  padding: 40px 30px;
+}
+.integation_detail h5 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
 
 
 
@@ -1119,7 +1548,7 @@ background-color:black;
   .blog_img {
     height: 250px;
   }
-  .owl-carousel .owl-item .blog_img img {
+  .owl-carousel .owl-item .blog_img img, .blog_img img {
     min-height: 250px;
   }
   .faq_questions {
@@ -1137,8 +1566,14 @@ background-color:black;
   .info_detais {
     padding: 0 60px;
   }
+  .que_support_single.info_detais {
+    padding: 60px;
+  }
   .relationship {
     padding: 40px 15px;
+  }
+  .kiosk_img {
+    width: 100%;
   }
 }
 
@@ -1193,8 +1628,11 @@ background-color:black;
     width: 130px;
     height: 84px;
   }
-  .que_integration {
+  .que_integration, .self_service .col-lg-6 {
     padding: 0;
+  }
+  .self_service .col-lg-6 {
+    margin-top: 40px;
   }
   .que_header br {
     display: none;
@@ -1211,10 +1649,24 @@ background-color:black;
   .appointments_det {
     margin-bottom: 50px;
   }
+  .self_service {
+    background-color: #fff;
+  }
+  .self_service_kiosk {
+    background-color: #EEF5FF;
+  }
+  .que_support_single.info_detais {
+    padding: 60px;
+    margin-top: 30px;
+  }
+  .discover_necessary.disover {
+    padding: 90px 110px;
+  }
 }
 
 @media (max-width: 767px) {
-  .que_banner_img, .product_img, .desk_specific {
+  .que_banner_img, .product_img, .desk_specific,
+  .job_direction, .filter_single .col-md-4:before {
     display: none;
   }
   .owl-dots {
@@ -1238,10 +1690,11 @@ background-color:black;
   #container {
     height: 85%;
   }
-  .integration_img, .quick_links {
+  .integration_img, .quick_links,
+  .blog_small {
     margin-top: 40px;
   }
-  .mob_specific {
+  .mob_specific, .openings, .filter_content {
     display: block;
   }
   .que_clients .item {
@@ -1260,6 +1713,29 @@ background-color:black;
   .features .mt-40 {
     margin-top: 0;
   }
+  .que_support_single.info_detais {
+    margin-bottom: 0;
+  }
+  .customer_feed .relationship {
+    padding: 40px 15px;
+  }
+  .job_type {
+    float: right;
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  .job_opening {
+    width: 70%;
+    margin-bottom: 30px;
+    display: inline-block;
+  }
+  .owl-carousel .owl-item .blog_img img, .blog_img img {
+    height: 100%;
+  }
+  .que_filtering {
+    padding: 10px 0;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1273,13 +1749,15 @@ background-color:black;
     padding: 0;
   }
   .header-content h1 br, .product_active_number,
-  .que_header h2 br, .que_desk_visib {
+  .que_header h2 br, .que_desk_visib, .information .intersect-left, 
+  .information .intersect-right, .discover_necessary 
+  .intersect-left, .discover_necessary .intersect-right {
     display: none;
   }
   .que_header h2 {
     font-size: 28px;
   }
-  .que_mob_visib {
+  .que_mob_visib, .news_single {
     display: block;
   }
   .que_banner_text .item {
@@ -1303,7 +1781,7 @@ background-color:black;
   .panel {
     height: 85%;
   }
-  .panel:after {
+  .panel:after, .disover .row {
     height: 100%;
   }
   .description.prdt_mob {
@@ -1321,7 +1799,8 @@ background-color:black;
     width: 65px;
     height: 75px;
   }
-  .become_partner .col-md-6 {
+  .become_partner .col-md-6,
+  .info_detais.scheduling_app, .sub_news_detail {
     padding: 0;
   }
   .subscribe_form .form-control, .footer_bottom {
@@ -1329,7 +1808,8 @@ background-color:black;
   }
   .subscribe_form .col-7.col-md-12,
   .nav-menu .reqst_buttons .btn_primary, 
-  .nav-menu .reqst_buttons .btn_secondary {
+  .nav-menu .reqst_buttons .btn_secondary,
+  .news_single img {
     width: 100%;
   }
   .social_media ul {
@@ -1348,5 +1828,41 @@ background-color:black;
   .clients_single {
     width: 250px;
     height: 170px;
+  }
+  .information .que_header {
+    padding: 40px 15px;
+  }
+  .self_service_kiosk {
+    padding: 80px 15px 0 15px;
+  }
+  .counter_display {
+    padding: 0 15px 80px 15px;
+  }
+  .que_support_single.info_detais {
+    padding: 30px;
+  }
+  .discover_necessary.disover {
+    padding: 50px 15px;
+  }
+  .que_mng_sftr .benefits_explain {
+    padding: 40px 15px;
+  }
+  .info_detais h4, .que_support_single.info_detais p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .que_discover .que_header {
+    margin-bottom: 0;
+  }
+  .job_opening {
+    width: 60%;
+  }
+  .years_experience {
+    width: auto;
+    text-align: left;
+  }
+  .news_single img {
+    height: 100%;
+    margin-bottom: 30px;
   }
 }
