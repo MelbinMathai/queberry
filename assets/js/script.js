@@ -10,8 +10,11 @@ $(window).scroll(function() {
 });
 /* End */
 
-//Scroll back to top
+$('.que_filtering').click(function() {
+    $('.filter_content').toggle('slow');
+});
 
+//Scroll back to top
 (function($) { "use strict";
 
     $(document).ready(function(){"use strict";
@@ -102,6 +105,71 @@ $('.banner_anim').owlCarousel({
     }
 });
 
+/*/////////// Blog ///////////*/
+$('.blog_item').owlCarousel({
+    loop:true,
+    margin:20,
+    dots:false,
+    nav:false,
+    mouseDrag:true,
+    autoplay:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:3
+        }
+    }
+});
+
+
+/*/////////// Clients ///////////*/
+$('.clients_mob').owlCarousel({
+    loop:true,
+    margin:20,
+    dots:false,
+    nav:false,
+    mouseDrag:true,
+    autoplay:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:1
+        }
+    }
+});
+
+/*/////////// News ///////////*/
+$('.news_item').owlCarousel({
+    loop:true,
+    margin:20,
+    dots:false,
+    nav:false,
+    mouseDrag:true,
+    autoplay:false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:2
+        },
+        1000:{
+            items:4
+        }
+    }
+});
+
+
 
 /*///////// Number Counting ///////////*/
 var counted = 0;
@@ -153,48 +221,7 @@ gsap.to(".panel:not(:last-child)", {
 gsap.set(".panel", {zIndex: (i, target, targets) => targets.length - i});
 
 
-/*/////////// Blog ///////////*/
-$('.blog_item').owlCarousel({
-    loop:true,
-    margin:20,
-    dots:false,
-    nav:false,
-    mouseDrag:true,
-    autoplay:false,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:3
-        }
-    }
-});
 
-
-/*/////////// Clients ///////////*/
-$('.clients_mob').owlCarousel({
-    loop:true,
-    margin:20,
-    dots:false,
-    nav:false,
-    mouseDrag:true,
-    autoplay:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:1
-        }
-    }
-});
 
 
 
