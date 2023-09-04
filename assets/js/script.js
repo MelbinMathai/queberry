@@ -10,11 +10,14 @@ $(window).scroll(function() {
 });
 /* End */
 
+
+/*//////// Toggle Class ////////*/
 $('.que_filtering').click(function() {
     $('.filter_content').toggle('slow');
 });
 
-//Scroll back to top
+
+/*//////// Scroll back to top ////////*/
 (function($) { "use strict";
 
     $(document).ready(function(){"use strict";
@@ -219,6 +222,10 @@ gsap.to(".panel:not(:last-child)", {
 });
 
 gsap.set(".panel", {zIndex: (i, target, targets) => targets.length - i});
+
+
+
+
 
 
 
