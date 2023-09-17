@@ -93,7 +93,7 @@ $('.banner_anim').owlCarousel({
     dots:true,
     nav:false,
     mouseDrag:false,
-    autoplay:false,
+    autoplay:true,
     animateOut: 'slideOutUp',
     responsive:{
         0:{
