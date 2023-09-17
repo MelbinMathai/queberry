@@ -680,10 +680,13 @@ nav > .navmenu_right > div {
 }
 
 /*////////// Our Products /////////*/
+.pin-spacer {
+  margin: 0 auto !important;
+}
 #container {
   width: 1220px;
   height: 90%; 
-  margin: 0 auto;
+  margin: 0 auto !important;
   overflow: hidden;
   border-radius: 55px;
 }
@@ -1003,6 +1006,20 @@ nav > .navmenu_right > div {
 .footer_logo img {
   width: 215px;
 }
+.quick_links .accordion, 
+.quick_links.faq_questions .accordion-item {
+  background-color: #101c32;
+}
+.quick_links.faq_questions .accordion-button:after {
+  color: #fff;
+  right: 18px;
+  border: none;
+  margin-left: 0;
+  content: '\f078';
+  position: absolute;
+  background-image: none;
+  font-family: 'fontawesome';
+}
 .footer_logo p, .quick_links a {
   color: #E1E1E1;
 }
@@ -1038,6 +1055,12 @@ nav > .navmenu_right > div {
 .address ul li:hover a {
   padding-left: 0;
 }
+.quick_links .accordion-button {
+  background-color: transparent;
+} 
+.quick_links.faq_questions .accordion-header h4 {
+  text-decoration: none;
+}
 .footer_bottom {
   padding: 10px 0;
   background: #13223E;
@@ -1066,6 +1089,7 @@ nav > .navmenu_right > div {
 .copyrights {
   color: #fff;
 }
+
 
 /*/////////// Progress Animation ///////////*/
 .blok:nth-of-type(odd) {
